@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Agent Sign Up Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .container {
+            background-color:white;
+            padding:20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width:300px;
+            }
+        h2{
+           text-align: center;
+           margin:bottom;
+        }
+        label {
+            display:block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"]{
+            width:100%;
+            padding:8px;
+            margin-bottom: 10px;
+            border:1px solid black;
+            border-radius: 5px;
+          }
+        button {
+            width:100%;
+            padding:10px;
+            background-color:green;
+            color:white;
+            border:none;
+            border-radius: 5px;
+            cursor:pointer;
+        }
+        button:hover {
+            background-color: darkgreen;
+        }
+</style>
+</head>
+    <body>
+            <div class="container" onsubmit="return validateForm()">
+              <h2>Sign Up</h2>
+             
+              <form id="signupForm" action="signupform(3).php" method="post">
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username" required><br>
+              <label for="email">Email:</label>
+              <input type="text" id="email" name="email" required><br>
+               <label for="password">Password:</label>
+               <input type="password" id="password" name="password" required><br>
+               <label for="confirmPassword">Confirm Password:</label>
+               <input type="password" id="confirmPassword" name="confirmPassword" required><br><br>
+        
+            <button type="submit">Sign Up</button>
+              </div>
+              </form>
+            <script src="script.js">
+                function validateForm() {
+                    const username=document.getElementById('username').value;
+                    const email=document.getElementById('email').value;
+                    const password=document.getElementById('password').value;
+                    const confirmPassword=document.getElementById('confirmPassword');
+        
+                    if(password!==confirmPassword){
+                        alert ('passwords do not much!');
+                        return false;
+                    }
+                    alert('Form submitted successfully!');
+                    return true;
+                }
+            </script>   
+</body>
+</html>

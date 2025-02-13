@@ -1,0 +1,57 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body {
+     background-image: url('drugs.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+header, footer {
+    background-color: blue;
+    color:black;
+    width:100%;
+}
+footer {
+    position:absolute;
+    bottom:0;
+    text-align: center;
+    font-size: 22px;
+    padding:30 px 0;
+}
+img {
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    justify-content: left;
+    position:left ;
+    margin-right: auto;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 18px;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+nav ul li a {
+    text-decoration: none;
+    color:white;
+    font-size: 19px;
+    padding:0 15px;
+    text-transform: capitalize;
+}
+nav ul li a:hover {
+    color:green;
+    cursor: hand;
+    transition:1s;
+}
+.button {
+    color:black;
+    background-color: grey;
+}

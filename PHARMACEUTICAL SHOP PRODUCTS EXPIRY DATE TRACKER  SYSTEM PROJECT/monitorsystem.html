@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Administrator Monitor System</title>
+</head>
+<body>
+    <h2>Windows Server Management Interface</h2>
+    <form id="serverForm" method="post" action="monitor.php">
+        <label for="task">Select Task:</label>
+        <select id="task" name="task">
+            <option value="restart">Restart Server</option>
+            <option value="list_users">List Users</option>
+            <option value="check_disk">Check Disk Space</option>
+        </select><br>
+         <br>
+        <button type="submit">Execute</button>
+    </form>
+</html>

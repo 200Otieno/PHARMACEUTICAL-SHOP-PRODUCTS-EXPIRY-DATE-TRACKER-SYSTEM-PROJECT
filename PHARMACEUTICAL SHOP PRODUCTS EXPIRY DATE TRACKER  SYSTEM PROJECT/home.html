@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="styles.css">
+<style>
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    }
+body {
+     background-image: url('JOHN OTIENO(1).jpg');
+     background-repeat: repeat;
+     background-size:contain
+    }
+header, footer {
+    background-color: blue;
+    color:black;
+    width:100%;
+}
+footer {
+    position:absolute;
+    bottom:0;
+    text-align: center;
+    font-size: 22px;
+    padding:30 px 0;
+    display:flex;
+}
+img {
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    justify-content: left;
+    position:left ;
+    margin-right: auto;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 18px;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+nav ul li a {
+    text-decoration: none;
+    color:white;
+    font-size: 19px;
+    padding:0 15px;
+    text-transform: capitalize;
+}
+nav ul li a:hover {
+    color:green;
+    cursor: hand;
+    transition:1s;
+}
+.button {
+    color:black;
+    background-color: grey;
+}
+p{
+    text-align: center;
+}
+@media screen and(min-width:480px) {
+   #leftsidebar {width:200px;float:left;} 
+   #main {margin-left: 216px;}
+}
+@media (max-width:768px){
+    nav ul li {
+        display:block;
+        width:100%;
+    }
+}
+@media (max-width:480px){
+    body{
+        margin: 10px;
+    }
+}
+</style>
+<body>
+    <header>
+        <div class="logo">
+<img src="JOHN OTIENO.jpg" alt="JOHN OTIENO">
+        </div>
+        <nav>
+            <ul>
+                <li><a href=" pharmacist.html">Pharmacist</a></li>
+                <li><a href="patient.html">Patient</a></li>
+                <li><a href="systemadministrator.html">System Administrator</a></li>
+                <li><a href="deliveryagent.html">Delivery Agent</a></li>
+            </ul>
+        </nav>
+    </header>
+    <p>All of you are welcomed to my website.</p>
+<footer>
+        <nav>
+            <ul>
+                <li><a href="aboutus.html"><img src="about us.png" alt="About Us">About Us</a></li>
+                <li><a href="contact.html"><img src="contact.png" alt="Contact">Contact</a></li>
+                <li><a href="location.html"><img src="location.png" alt="Location">Location</a></li>
+            </ul>
+        </nav>
+        <p>@Copyright:All rights reserved.</p>
+</footer>
+</body>
+</html>

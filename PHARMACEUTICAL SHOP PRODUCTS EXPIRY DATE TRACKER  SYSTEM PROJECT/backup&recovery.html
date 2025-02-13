@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backup&Recovery</title>
+</head>
+<body>
+    <h1>Server Management Interface</h1>
+    <form id="managementForm" method="post" action="backupexecinterface.php">
+        <h2>Backup Exec Tasks</h2>
+        <label for="backupTask">Select Backup Task:</label>
+        <select id="backupTask" name="backupTask>
+            <option value="start_backup">Start Backup</option>
+            <option value="checkup_backup_status">Check Backup Status</option>
+        </select>
+         <h2>Windows Server Tasks</h2>
+         <label for="serverTask">Select Server Task:</label>
+         <select id="serverTask" name="serverTask">
+             <option value="restart">Restart Server</option>
+             <option value="list_users">List Users</option>
+             <option value="check_disk">check Disk Space</option>
+         </select><br><br>
+        <button type="submit">Execute</button>
+        </form>
+</body>
+</html>
